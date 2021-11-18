@@ -5,8 +5,6 @@
 }
 body {
   font-family: sans-serif;
-  max-width: 1366px;
-  margin: auto;
 }
 .hero_section {
   width: 100%;
@@ -16,10 +14,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-}
-
-.toggle_menu {
-  display: none;
 }
 .nav {
   width: 100%;
@@ -86,12 +80,6 @@ body {
   bottom: 30px;
   left: 12%;
 }
-.content_right .robo_text {
-  position: absolute;
-  right: 100px;
-  width: 300px;
-  height: 150px;
-}
 .content_left .lower_text {
   width: 400px;
   font-size: 20px;
@@ -103,21 +91,27 @@ body {
   bottom: 72px;
   left: 15%;
 }
-.content_right .lower_text {
+.robo_section .lower_text {
   position: absolute;
-  right: 40px;
-  top: 186px;
+  right: 2.6rem;
+  top: 11.2rem;
   width: 300px;
   height: 150px;
   font-weight: bold;
   font-size: 28px;
   color: #0d435a;
 }
-.content_right .robo_img {
-  width: 320px;
+.robo_section .robo_img {
+  width: 310px;
   position: absolute;
   right: 40px;
   bottom: 55px;
+}
+.content_right .robo_text {
+  position: absolute;
+  right: 6.5rem;
+  width: 300px;
+  height: 150px;
 }
 .icons {
   display: flex;
@@ -126,7 +120,6 @@ body {
   align-self: flex-end;
   flex-direction: row;
   font-size: 1.5rem;
-
   position: absolute;
   right: 50px;
   bottom: 40px;
@@ -148,56 +141,6 @@ body {
   right: 78px;
   bottom: 12px;
 }
-
-/* responsive media queries */
-@media screen and (max-width: 1024px) {
-  .hero_section {
-    height: 100vh;
-  }
-  .nav_logo {
-    margin: 0 0 0 50px;
-  }
-  .menu_box ul {
-    padding: 15px;
-    clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 97%);
-  }
-  .menu_box ul li a {
-    font-size: 24px;
-  }
-  .hero_content {
-    width: 55%;
-    height: 55%;
-    top: 6rem;
-    left: 6.5rem;
-  }
-  .content_left img {
-    width: 400px;
-    bottom: 7rem;
-    left: 12%;
-  }
-  .content_left .lower_text {
-    width: 400px;
-    font-size: 18px;
-    bottom: 8.5rem;
-    left: 9.5%;
-  }
-  .content_right .lower_text {
-    right: -1.5rem;
-    top: 186px;
-    font-size: 24px;
-  }
-  .content_right .robo_text {
-    right: 50px;
-    top: 9.6rem;
-    width: 300px;
-    height: 120px;
-  }
-  .content_right .robo_img {
-    right: 0;
-    bottom: 5.5rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .svg_bg {
     width: 140px;
@@ -252,71 +195,235 @@ body {
     bottom: 5.5rem;
   }
 }
-
-@media screen and (max-width: 425px) {
-  .toggle_menu {
-    display: block;
-    z-index: 999;
-    margin-top: 10px;
+@media screen and (max-width: 1024px) {
+  .svg_bg {
+    width: 160px !important;
   }
-  .toggle_menu i {
-    font-size: 3rem;
-    color: #ffffff;
+  .nav_logo {
+    margin: 0 0 0 40px;
   }
-  .menu_box {
-    display: none;
+  .menu_box ul li a {
+    font-size: 24px;
   }
   .hero_content {
-    width: 70%;
-    height: 70%;
-    top: 10rem;
-    left: 0;
+    width: 60%;
+    height: 60%;
+    top: 3rem;
+    left: 4rem;
   }
   .content_left img {
-    width: 220px;
-    bottom: 6rem;
-    left: 6%;
+    width: 370px;
+    bottom: 5rem;
+    left: 12%;
   }
   .content_left .lower_text {
-    width: 220px;
-    font-size: 10px;
-    bottom: 7rem;
-    letter-spacing: 0;
-    left: 3.5%;
-  }
-  .content_right .robo_text {
-    right: 0;
-    width: 150px;
-    height: 80px;
+    width: 350px;
+    font-size: 16px;
+    bottom: 6.5rem;
+    left: 11.5%;
   }
   .content_right .lower_text {
-    width: 140px;
-    height: 90px;
-    right: -1rem;
-    top: 11rem;
-    font-size: 16px;
+    right: -1.5rem;
+    top: 186px;
+    font-size: 24px;
+  }
+  .content_right .robo_text {
+    right: 50px;
+    top: 9.6rem;
+    width: 300px;
+    height: 120px;
   }
   .content_right .robo_img {
-    width: 200px;
-    position: absolute;
-    right: -2rem;
+    width: 275px;
+    right: 1rem;
+    bottom: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .svg_bg {
+    width: 200px !important;
+  }
+  .content_left img {
+    width: 400px;
+  }
+  .content_left .lower_text {
+    font-size: 18px;
+    bottom: 3.7rem;
+    left: 10%;
+  }
+  .robo_section .robo_img {
+    width: 300px;
+    bottom: 2rem;
+  }
+  .content_right .robo_text {
+    width: 350px;
+    height: 120px;
+  }
+  .robo_section .lower_text {
+    font-size: 24px;
+    right: 3rem;
+    top: 10.5rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .svg_bg {
+    width: 220px !important;
+  }
+  .comp_link {
+    right: 5rem;
+    bottom: 0.8rem;
+  }
+  .icons {
+    gap: 2.5rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    right: 6.3rem;
     bottom: 4rem;
   }
   .icons {
-    gap: 0.5rem;
-    font-size: 1.1rem;
-    right: 24%;
+    gap: 1rem;
+    font-size: 1.5rem;
+    right: 1.1rem;
+    bottom: 2.6rem;
   }
   .fab {
-    padding: 0.5rem;
-    border: 1px solid #231c64;
+    background: rgb(250, 247, 247);
+    padding: 0.4rem;
+    border-radius: 100px;
+    color: #231c64;
   }
   .comp_link a {
-    color: #000000;
-    font-size: 16px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .svg_bg {
+    width: 180px !important;
+  }
+  .menu_box ul {
+    padding: 20px;
+  }
+  .menu_box ul li a {
+    padding: 15px 30px;
+    font-size: 26px;
+  }
+  .content_left img {
+    width: 400px;
+    bottom: 1rem;
+  }
+  .content_left .lower_text {
+    width: 380px;
+    font-size: 20px;
+    bottom: 2.5rem;
+    left: 11.5%;
+  }
+  .robo_section .lower_text {
+    font-size: 26px;
+    right: 3.5rem;
+    top: 10rem;
+  }
+  .content_right .robo_text {
+    right: 10.5rem;
+    top: 8rem;
+    width: 220px;
+    height: 130px;
+  }
+  .robo_section .robo_img {
+    width: 250px;
+    right: 5rem;
+    bottom: 3.4rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .svg_bg {
+    width: 260px !important;
+  }
+  .hero_content {
+    width: 75%;
+    height: 75%;
+    top: 2rem;
+    left: 9.5rem;
+  }
+  .robo_section .robo_img {
+    width: 400px;
+    right: 2rem;
+    bottom: 3rem;
+  }
+  .content_right .robo_text {
+    right: 10.5rem;
+    top: 6rem;
+    width: 280px;
+    height: 250px;
+  }
+  .robo_section .lower_text {
+    right: 6.4rem;
+    font-size: 32px;
+  }
+  .nav_logo {
+    margin: 0 0 0 40px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .svg_bg {
+    width: 390px !important;
+  }
+  .menu_box ul {
+    padding: 30px;
+  }
+  .menu_box ul li a {
+    padding: 15px 30px;
+    font-size: 32px;
+  }
+  .hero_content {
+    width: 80%;
+    height: 80%;
+    top: 2rem;
+    left: 9.5rem;
+  }
+  .content_left img {
+    width: 550px;
+    bottom: 1.3rem;
+  }
+  .content_left .lower_text {
+    width: 500px;
+    font-size: 26px;
+    bottom: 3.6rem;
+    left: 12.5%;
+  }
+  .robo_section .lower_text {
+    right: 10.8rem;
+    top: 14rem;
+    width: 400px;
+    height: 250px;
+    font-weight: bold;
+    font-size: 42px;
+    color: #0d435a;
+  }
+  .robo_section .robo_img {
+    width: 530px;
+    position: absolute;
+    right: 40px;
+    bottom: 55px;
+  }
+  .content_right .robo_text {
+    right: 15.5rem;
+    top: 10rem;
+    width: 400px;
+    height: 250px;
+  }
+  .icons {
+    gap: 2.5rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    right: 6.3rem;
+    bottom: 4rem;
+  }
+  .comp_link a {
+    font-size: 26px;
   }
   .comp_link {
-    left: 31.5%;
-    bottom: 12px;
+    position: absolute;
+    right: 10rem;
+    bottom: 1rem;
   }
 }
