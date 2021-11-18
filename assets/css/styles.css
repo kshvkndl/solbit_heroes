@@ -295,6 +295,12 @@ body {
   .comp_link a {
     font-size: 18px;
   }
+  .robo_section .robo_img {
+    width: 350px;
+    position: absolute;
+    right: 40px;
+    bottom: 55px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .svg_bg {
