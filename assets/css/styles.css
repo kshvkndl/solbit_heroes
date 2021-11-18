@@ -299,12 +299,12 @@ body {
     width: 350px;
     position: absolute;
     right: 40px;
-    bottom: 55px;
+    bottom: 2rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .svg_bg {
-    width: 180px !important;
+    width: 290px !important;
   }
   .menu_box ul {
     padding: 20px;
@@ -324,25 +324,25 @@ body {
     left: 11.5%;
   }
   .robo_section .lower_text {
-    font-size: 26px;
-    right: 3.5rem;
-    top: 10rem;
+    font-size: 32px;
+    right: 8.5rem;
+    top: 15rem;
   }
   .content_right .robo_text {
     right: 10.5rem;
-    top: 8rem;
-    width: 220px;
-    height: 130px;
+    top: 12rem;
+    width: 350px;
+    height: 180px;
   }
   .robo_section .robo_img {
-    width: 250px;
-    right: 5rem;
-    bottom: 3.4rem;
+    width: 460px;
+    right: 3rem;
+    bottom: 4rem;
   }
 }
 @media screen and (min-width: 1920px) {
   .svg_bg {
-    width: 260px !important;
+    width: 400px !important;
   }
   .hero_content {
     width: 75%;
@@ -351,18 +351,19 @@ body {
     left: 9.5rem;
   }
   .robo_section .robo_img {
-    width: 400px;
+    width: 540px;
     right: 2rem;
     bottom: 3rem;
   }
   .content_right .robo_text {
-    right: 10.5rem;
-    top: 6rem;
-    width: 280px;
+    right: 12.5rem;
+    top: 10rem;
+    width: 300px;
     height: 250px;
   }
   .robo_section .lower_text {
-    right: 6.4rem;
+    top: 14.5rem;
+    right: 10rem;
     font-size: 32px;
   }
   .nav_logo {
@@ -371,7 +372,7 @@ body {
 }
 @media screen and (min-width: 2560px) {
   .svg_bg {
-    width: 390px !important;
+    width: 540px !important;
   }
   .menu_box ul {
     padding: 30px;
@@ -381,24 +382,24 @@ body {
     font-size: 32px;
   }
   .hero_content {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     top: 2rem;
     left: 9.5rem;
   }
   .content_left img {
-    width: 550px;
-    bottom: 1.3rem;
+    width: 650px;
+    bottom: 10rem;
   }
   .content_left .lower_text {
     width: 500px;
     font-size: 26px;
-    bottom: 3.6rem;
-    left: 12.5%;
+    bottom: 13rem;
+    left: 14%;
   }
   .robo_section .lower_text {
     right: 10.8rem;
-    top: 14rem;
+    top: 20rem;
     width: 400px;
     height: 250px;
     font-weight: bold;
@@ -406,14 +407,14 @@ body {
     color: #0d435a;
   }
   .robo_section .robo_img {
-    width: 530px;
+    width: 730px;
     position: absolute;
     right: 40px;
     bottom: 55px;
   }
   .content_right .robo_text {
     right: 15.5rem;
-    top: 10rem;
+    top: 16rem;
     width: 400px;
     height: 250px;
   }
